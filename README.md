@@ -5,7 +5,10 @@
 - Virtual Machine Setup - 2 vCPUs, 8GB RAM, 180GB Disk
 - Network configuration (static ip, hostname, DNS, gateway) and DNS update
 - RHEL 8.3
-- yum -y update 
+  - Register your RHEL servier update the patchng
+ 
+            # asdlf
+            # yum -y update 
 
 ## Installation
 - Download Internet connected installation package - [https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz](https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz)
