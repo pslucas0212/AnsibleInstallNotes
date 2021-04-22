@@ -5,9 +5,9 @@
 - Virtual Machine Setup - 2 vCPUs, 8GB RAM, 180GB Disk
 - Network configuration (static ip, hostname, DNS, gateway) and DNS update
 - RHEL 8.3
-  - Register your RHEL servier update the patchng
+  - Register your RHEL server update the patchng
  
-            # asdlf
+            # # subscription-manager register --org=<your org id> --activationkey=<you activation key>
             # yum -y update 
 
 ## Installation
