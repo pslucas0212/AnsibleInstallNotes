@@ -9,6 +9,7 @@
 
 ## Installation
 - Download Internet connected installation package - [https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz](https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz)
+- **Note:** If you need to do a "disconnected" installation, download - [https://releases.ansible.com/ansible-tower/setup-bundle/ansible-tower-setup-bundle-latest.tar.gz](https://releases.ansible.com/ansible-tower/setup-bundle/ansible-tower-setup-bundle-latest.tar.gz)
 
       # tar xvzf ansible-tower-setup-latest.tar.gz
       # cd ansible-tower-setup-3.8.2-1
