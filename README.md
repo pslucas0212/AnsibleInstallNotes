@@ -7,7 +7,7 @@
 - RHEL 8.3
   - Register your RHEL server update the patchng
  
-            # # subscription-manager register --org=<your org id> --activationkey=<you activation key>
+            # subscription-manager register --org=<your org id> --activationkey=<you activation key>
             # yum -y update 
 
 ## Installation
@@ -24,12 +24,12 @@
 
       # ./setup.sh
       
-- You are now able access your Tower installation at http://<ansibleTowerURL>/.  You will receive a redirect to port 443.  
+- You are now able access your Tower installation at http://localhost/.  You will receive a redirect to port 443.  
 - If this is the first time you log into Ansible Tower, you will need to provide a subscription manifest
 
 ## Assigning Subscription
 - You have a couple of options for adding endpoint subscriptions to your Ansible Tower instance.
-- I chose to generate a manifest file and import that into my Ansible Tower instance.  You would create a Satellite manifest.  For this installation, I chose Satellite 6.9 and added the appropriate subscription and number of endpoints I wanted to manage.
+- I chose to generate a manifest file and import that into my Ansible Tower instance.  You would create a Satellite manifest.  For this installation, I chose Satellite 6.9 and added the appropriate subscription and the number of endpoints I wanted to manage.
 
 ## References
 [Ansible Automation Platform Quick Installation Guide v3.8.2](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/index.html)
