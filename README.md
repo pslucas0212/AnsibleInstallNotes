@@ -1,16 +1,32 @@
 # Ansible Installation Notes
-- Updated 2021-04-21
+- Updated 2021-09-09
 
 ## Pre-reqs
 - Virtual Machine Setup - 2 vCPUs, 8GB RAM, 180GB Disk
-- Network configuration (static ip, hostname, DNS, gateway) and DNS update
-- RHEL 8.3
-  - Register your RHEL server update the patchng
- 
-            # subscription-manager register --org=<your org id> --activationkey=<you activation key>
-            # yum -y update 
+- Network configuration (static ip, hostname, DNS, gateway) and update DNS records
+- RHEL 8.4 with simple content access enabled
+  - Register your RHEL server, enable repos, and update all packages
+ ```
+ # subscription-manager register --org=<your org id> --activationkey=<you activation key>
+ # subscription-manager status
+ # insights-client --enable
+ # insights-client --register
+ # subscription-manager repos --enable ansible-2.9-for-rhel-8-x86_64-rpms
+ # subscription-manager repos --enable rhel-8-for-x86_64-baseos-rpms
+ # subscription-manager repos --enable rhel-8-for-x86_64-appstream-rpms
+ # subscription-manager repos --list-enabled
+ # yum -y update 
+```
 
 ## Installation
+- Install Ansible
+```
+# yum -y install ansible
+# ansible --version
+# ansible -m setup localhost | grep ansible_python_version
+```
+
+
 - Download Internet connected installation package - [https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz](https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz)
 - **Note:** If you need to do a "disconnected" installation, download - [https://releases.ansible.com/ansible-tower/setup-bundle/ansible-tower-setup-bundle-latest.tar.gz](https://releases.ansible.com/ansible-tower/setup-bundle/ansible-tower-setup-bundle-latest.tar.gz)
 
