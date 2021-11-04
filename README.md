@@ -96,7 +96,13 @@ On the Create New Subscription Allocation page, fill in the Name text field, cho
 
 ![Complete News Subscription Allocation](/images/aap04.png)
 
-....
+On the Subcription Allocations >> app_prod_manifest page, click the Subscriptions tab and then click the blue Add Subscriptions button.
+
+![Add Subscriptions](/images/aap05.png)
+
+On the Add Subscriptions to app_prod_manifest page, scroll down to your Red Hat Ansbile Automation Platform subscription and chose the number of nodes you want to mange with this Ansible Tower instance.
+
+![Chose number of Nodes](/images/app06.png)
 
 Scroll down to the bottom of the page and click the black Submit button to create the manifest file.
 
