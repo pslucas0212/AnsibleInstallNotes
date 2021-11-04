@@ -51,6 +51,6 @@ My notes for setting up Ansible in a lab environment.  My lab enviroment consist
 - I chose to generate a manifest file and import that into my Ansible Tower instance.  You would create a Satellite manifest.  For this installation, I chose Satellite 6.9 and added the appropriate subscription and the number of endpoints I wanted to manage.
 
 ## References
-[Ansible Automation Platform Quick Installation Guide v3.8.2](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/index.html)
+[Ansible Automation Platform Quick Installation Guide - Latest Version](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/index.html)
 
  
