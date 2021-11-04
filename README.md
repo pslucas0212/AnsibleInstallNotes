@@ -30,7 +30,26 @@ Download the latest AAP Internet connected installation package - [https://relea
 # tar xvzf ansible-tower-setup-latest.tar.gz
 # cd ansible-tower-setup-3.8.4-1
 ```
-Update inventory file according to your installation preference. **Note:** This current installation doesn't include Automation Hub
+Update inventory file according to your installation preference. See the following inventory file snippet.
+```
+[tower]
+localhost ansible_connection=local
+
+[automationhub]
+
+[database]
+
+[all:vars]
+admin_password='<YourPasswordHere>'
+
+pg_host=''
+pg_port=''
+
+pg_database='awx'
+pg_username='awx'
+pg_password='<YourPasswordHere>'
+pg_sslmode='prefer'  # set to 'verify-full' for client-side enforced SSL
+```
 I created a single node installation with tower and the database installed on the same node
 Run the setup installation script setup.sh from the unzipped directory above
 
@@ -38,8 +57,8 @@ Run the setup installation script setup.sh from the unzipped directory above
 # ./setup.sh
 ```
       
-- You are now able access your Tower installation at http://localhost/.  You will receive a redirect to port 443.  
-- If this is the first time you log into Ansible Tower, you will need to provide a subscription manifest
+You are now able access your Tower installation at http://localhost/.  You will receive a redirect to port 443.  
+If this is the first time you log into Ansible Tower, you will need to provide a subscription manifest
 
 ## Assigning Subscription
 - You have a couple of options for adding endpoint subscriptions to your Ansible Tower instance.
