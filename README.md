@@ -57,6 +57,19 @@ Run the setup installation script setup.sh from the unzipped directory above
 ```
 # ./setup.sh
 ```
+Here is an excerpt of the installation output you will seen on your terminal.  Look for the "The setup process completed successfully." message.
+```
+Updating Subscription Management repositories.
+Ansible Tower Dependencies Repository -         1.4 MB/s | 523 kB     00:00    
+Last metadata expiration check: 0:00:01 ago on Thu 04 Nov 2021 03:57:43 PM CDT.
+Dependencies resolved.
+...
+PLAY RECAP *********************************************************************
+localhost                  : ok=175  changed=86   unreachable=0    failed=0    skipped=86   rescued=0    ignored=2   
+
+The setup process completed successfully.
+Setup log saved to /var/log/tower/setup-2021-11-04-15:57:40.log.
+```
       
 You are now able access your Tower installation at http://localhost/.  You will receive a redirect to port 443.  
 If this is the first time you log into Ansible Tower, you will need to provide subscription information.  If you have purchased an Ansible subscription, you can enter the subscription information in one of two ways.
@@ -82,6 +95,14 @@ On the Subscriptions page, click the Subscription Allocations tab.  On the Subsc
 On the Create New Subscription Allocation page, fill in the Name text field, choose Satellite 6.9 from the drop down list and click the blue reate button.  Note: The Type choice for the manifest doesn't matter.  I chose the latest GA version of Satellite for this example.
 
 ![Complete News Subscription Allocation](/images/aap04.png)
+
+....
+
+Scroll down to the bottom of the page and click the black Submit button to create the manifest file.
+
+On the Subcription Allocations >> app_prod_manifest page, click the black Export Manifest button to download the mandifest file to your computer.
+
+![Export Manifest](/images/aap07.png)
 
 ## References
 [Ansible Automation Platform Quick Installation Guide - Latest Version](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/index.html)
