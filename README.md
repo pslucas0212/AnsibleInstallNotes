@@ -1,8 +1,10 @@
 # Ansible Installation Notes
-- Updated 2021-11-04
+- Updated 2021-11-04. 
+
+My notes for setting up Ansible in a lab environment.  My lab enviroment consists of three vSphere x86 8 core, 64GB RAM hosts.
 
 ## Pre-reqs
-- Virtual Machine Setup - 2 vCPUs, 8GB RAM, 180GB Disk
+- Virtual Machine Setup - 2 vCPUs, 8GB RAM, 200GB Disk
 - Network configuration (static ip, hostname, DNS, gateway) and update DNS records
 - RHEL 8.4 with simple content access enabled
   - Register your RHEL server, enable repos, and update all packages
