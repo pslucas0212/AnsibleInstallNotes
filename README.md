@@ -74,6 +74,14 @@ Now click the Subscriptions tab.
 
 ![Click Subscriptions tab](/images/aap02.png)
 
+On the Subscriptions page, click the Subscription Allocations tab.  On the Subscription Allocations tab, click the black New Subscription Allocation button.
+
+![Click Subscription Allocation then New Subscription Allocation button](/images/aap03.png)
+
+On the Create New Subscription Allocation page, fill in the Name text field, choose Satellite 6.9 from the drop down list and click the blue reate button.  Note: The Type choice for the manifest doesn't matter.  I chose the latest GA version of Satellite for this example.
+
+![Complete News Subscription Allocation](/images/aap04.png)
+
 ## References
 [Ansible Automation Platform Quick Installation Guide - Latest Version](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/index.html)
 
