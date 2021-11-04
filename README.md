@@ -58,11 +58,21 @@ Run the setup installation script setup.sh from the unzipped directory above
 ```
       
 You are now able access your Tower installation at http://localhost/.  You will receive a redirect to port 443.  
-If this is the first time you log into Ansible Tower, you will need to provide a subscription manifest
+If this is the first time you log into Ansible Tower, you will need to provide subscription information.  If you have purchased an Ansible subscription, you can enter the subscription information in one of two ways.
+1. You can create a manifest file on your Red Hat Customer portal and import the manifest file into Ansible Tower.
+2. You can directly login to the Red Hat Customer portal and directly select your AAP subscription.
 
-## Assigning Subscription
-- You have a couple of options for adding endpoint subscriptions to your Ansible Tower instance.
-- I chose to generate a manifest file and import that into my Ansible Tower instance.  You would create a Satellite manifest.  For this installation, I chose Satellite 6.9 and added the appropriate subscription and the number of endpoints I wanted to manage.
+You might want to choose to use a manifest file for managing your Ansible subscription because you don't have to create a specific user and user password to enable the subscription (and manage the user).
+
+## Creating a Ansible Manifest File
+
+Go to [http://access.redhat.com](http://access.redhat.com) and clock the Login button.  Filling the login prompt with your Red Hat login or email and click the redt Next button.  Fill in your password and click the red Login button.
+
+![Click Login button](/images/aap01.png)
+
+Now click the Subscriptions tab.
+
+![Click Subscriptions tab](/images/aap02.png)
 
 ## References
 [Ansible Automation Platform Quick Installation Guide - Latest Version](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/index.html)
