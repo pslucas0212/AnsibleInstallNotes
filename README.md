@@ -24,27 +24,19 @@ My notes for setting up Ansible in a lab environment.  My lab enviroment consist
 ## Installation
 If you are installing the latest release of Ansible Automation Platform (AAP), you no longer need to install Ansible first.  The AAP bundle will install Ansible for you. 
 
-Download the  Internet connected installation package - [https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz](https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz)
+Download the latest AAP Internet connected installation package - [https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz](https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz)
 
 ```
-# yum -y install ansible
-# ansible --version
-# ansible -m setup localhost | grep ansible_python_version
+# tar xvzf ansible-tower-setup-latest.tar.gz
+# cd ansible-tower-setup-3.8.4-1
 ```
+Update inventory file according to your installation preference. **Note:** This current installation doesn't include Automation Hub
+I created a single node installation with tower and the database installed on the same node
+Run the setup installation script setup.sh from the unzipped directory above
 
-
-- Download Internet connected installation package - [https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz](https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz)
-- **Note:** If you need to do a "disconnected" installation, download - [https://releases.ansible.com/ansible-tower/setup-bundle/ansible-tower-setup-bundle-latest.tar.gz](https://releases.ansible.com/ansible-tower/setup-bundle/ansible-tower-setup-bundle-latest.tar.gz)
-
-      # tar xvzf ansible-tower-setup-latest.tar.gz
-      # cd ansible-tower-setup-3.8.2-1
-      
-      
-- Update inventory file according to your installation preference. **Note:** This current installation doesn't include Automation Hub
-- I created a single node installation with tower and the database installed on the same node
-- Run the setup installation script setup.sh from the unzipped directory above
-
-      # ./setup.sh
+```
+# ./setup.sh
+```
       
 - You are now able access your Tower installation at http://localhost/.  You will receive a redirect to port 443.  
 - If this is the first time you log into Ansible Tower, you will need to provide a subscription manifest
