@@ -22,7 +22,10 @@ My notes for setting up Ansible in a lab environment.  My lab enviroment consist
 ```
 
 ## Installation
-- Install Ansible
+If you are installing the latest release of Ansible Automation Platform (AAP), you no longer need to install Ansible first.  The AAP bundle will install Ansible for you. 
+
+Download the  Internet connected installation package - [https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz](https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz)
+
 ```
 # yum -y install ansible
 # ansible --version
