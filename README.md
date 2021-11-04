@@ -11,6 +11,7 @@
  # subscription-manager status
  # insights-client --enable
  # insights-client --register
+ # subscription-manager repos --list | grep ansible
  # subscription-manager repos --enable ansible-2.9-for-rhel-8-x86_64-rpms
  # subscription-manager repos --enable rhel-8-for-x86_64-baseos-rpms
  # subscription-manager repos --enable rhel-8-for-x86_64-appstream-rpms
