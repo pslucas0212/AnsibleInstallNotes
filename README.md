@@ -110,6 +110,18 @@ On the Subcription Allocations >> app_prod_manifest page, click the black Export
 
 ![Export Manifest](/images/aap07.png)
 
+You can logout out of your Red Hat Customer portal.
+
+Login in to your Ansible Tower instance.  You will see Tower Subscription page.  Click on the blue Browse button under section 2.  Navigate to the manfiest file you just downloaded and click the Open button on your the browse file dialog box to the load the manifest into your Ansible Tower instance.
+
+![Choose manfiest](/images/aap08.png)
+
+You'll now see that the manifest file is ready.  Scroll down and click the **I agree to the End User License Agreement** check box, and then click the green submit button.
+
+![Click green Submit button](/images/aap09.png)
+
+You'll now see the Ansible Tower dashboard.  You are all set to start your automation journey.
+
 ## References
 [Ansible Automation Platform Quick Installation Guide - Latest Version](https://docs.ansible.com/ansible-tower/latest/html/quickinstall/index.html)
 
