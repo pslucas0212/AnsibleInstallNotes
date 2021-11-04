@@ -1,5 +1,5 @@
 # Ansible Installation Notes
-- Updated 2021-09-09
+- Updated 2021-11-04
 
 ## Pre-reqs
 - Virtual Machine Setup - 2 vCPUs, 8GB RAM, 180GB Disk
